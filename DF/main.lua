@@ -30,7 +30,7 @@ function love.update()
     enemyTimer = enemyTimer + deltaTime
 
     --1초마다 적을 생성
-    if enemyTimer>1 then
+    if enemyTimer>=1 then
         --최대 속도보다 적으면 스피드 100씩 증가
         if curSpeed < maxSpeed then
             Game:GenerateEnemy(curSpeed)
